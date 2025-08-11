@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212038;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: rgb(76, 114, 185);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+    outline: 2px solid #7119ff;
+    outline-offset: -10px; 
+  }
+  
+  input {
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pode-votar {
+    color: #da25ca;
+    font-weight: bold;
+  }
+  
+  .idade-invalida {
+    color: #da25ca;
+    font-weight: bold;
+  }
+  
+  .voto-facultativo {
+    color: #da25ca; 
+    font-weight: bold;
+  }
+  
+  .nao-pode-votar {
+    color: #da25ca; 
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* opcional: adiciona uma sombra suave */
+}
+  label {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* opcional: adiciona uma sombra suave */
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    background-color: #7119ff;
+}
