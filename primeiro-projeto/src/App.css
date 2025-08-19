@@ -1,0 +1,102 @@
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, 
+    #E40303, /* vermelho */
+    #FF8C00, /* laranja */
+    #FFED00, /* amarelo */
+    #008026, /* verde */
+    #004DFF, /* azul */
+    #750787  /* roxo */
+  );
+  min-height: 100vh;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+input[type="text"] {
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  width: 280px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255,255,255,0.9);
+  color: #333;
+  font-weight: 600;
+}
+
+input[type="text"]:focus {
+  border-color: #FFED00;
+  box-shadow: 0 0 8px #FFED00;
+  outline: none;
+}
+
+button {
+  background: linear-gradient(45deg, #E40303, #750787);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transition: background 0.4s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #FF8C00, #004DFF);
+  transform: translateY(-3px);
+}
+
+hr {
+  border: 1px solid rgba(255,255,255,0.5);
+  margin: 30px 0;
+  width: 80%;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 25px;
+  width: 80%;
+  margin-top: 10px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  color: white;
+  font-weight: 600;
+}
+
+ol li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+ol li:last-child {
+  border-bottom: none;
+}
