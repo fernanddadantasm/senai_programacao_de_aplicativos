@@ -1,0 +1,15 @@
+/* senai_programacao_de_aplicativos\projeto-vite\src\components\DadosCurso\index.jsx */
+
+
+.dados-curso {
+    color: #f00a1d;
+    margin: 10px 0;
+    font-size: 24px;
+
+}
+
+.dados-curso p {
+    color: cb0c0c;
+    margin: 10PX 0;
+    font-size: 18px
+}

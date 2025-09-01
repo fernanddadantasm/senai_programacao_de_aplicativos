@@ -1,0 +1,15 @@
+/* senai_programacao_de_aplicativos\projeto-vite\src\components\InfoAluno\styles.css */
+
+
+.info-aluno {
+    color: #ec1a1a;
+    margin: 10px 0;
+    font-size: 24px;
+
+}
+
+.info-aluno p {
+    color: cb0c0c;
+    margin: 10PX 0;
+    font-size: 18px
+}

@@ -1,0 +1,12 @@
+/* senai_programacao_de_aplicativos\projeto-vite\src\components\Mensagem\index.jsx */
+
+.mensagem h1{
+    color: #155fd6;
+    margin: 10px 0;
+}
+.mensagem p{
+    color: #cb0c0c;
+    margin: 10px 0
+    ;
+}
+
