@@ -1,14 +1,14 @@
+import './App.css'; // <<--- ESTA LINHA É ESSENCIAL!
+import logo from './assets/images/logo.png';
+import InfoCliente from './components/InfoClientes';
 
-import './App.css'
+function App() { 
+  return ( 
+    <> 
+      <img src={logo} alt="logo" className="app-logo" /> 
+      <InfoCliente /> 
+    </> 
+  );
+} 
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    
-    </>
-  )
-}
-
-export default App
+export default App;

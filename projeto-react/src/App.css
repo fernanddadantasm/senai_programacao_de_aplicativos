@@ -1,42 +1,84 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* Fundo cinza claro */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Esta linha já centraliza TUDO no eixo transversal (horizontal aqui) */
+  margin: 0;
+}
+
+/* --- AQUI DIMINUÍMOS E CENTRALIZAMOS A LOGO --- */
+.app-logo {
+  width: 150px; /* Largura da logo. Pode ajustar se quiser. */
+  height: auto; /* Mantém a proporção */
+  margin: 30x auto; /* <<-- MUDANÇA AQUI: 'auto' vai centralizar horizontalmente */
+  /* Remove o ponto e vírgula extra se houver */
+}
+
+/* Container do formulário */
+.form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 450px;
+}
+
+.form-container h2,
+.form-container h3 {
   text-align: center;
+  color: #333;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.form-container div {
+  margin-bottom: 15px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
 }
 
-.card {
-  padding: 2em;
+/* --- AQUI ESTÁ O BOTÃO LARANJA DO ITAÚ --- */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ec7000; /* Laranja Itaú */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.form-container button:hover {
+  background-color: #d16200; 
 }
+
+/* Lista de clientes */
+.form-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.form-container li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  margin-bottom: 5px;
+}
+
