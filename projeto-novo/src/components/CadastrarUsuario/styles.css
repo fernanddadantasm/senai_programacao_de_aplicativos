@@ -1,0 +1,58 @@
+/* projeto-novo\src\components\CadastrarUsuario\styles.css */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form h2 {
+  text-align: left;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--cor-texto-forte);
+}
+
+/* Estilo de input limpo e moderno */
+form input {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  background-color: #fff;
+  color: var(--cor-texto-forte);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+form input::placeholder {
+  color: var(--cor-texto-suave);
+}
+
+form input:focus {
+  outline: none;
+  border-color: var(--cor-principal);
+  box-shadow: 0 0 0 3.5px rgba(99, 91, 255, 0.15);
+}
+
+/* Botão sólido, com hover moderno */
+form button {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--cor-principal);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: color-mix(in srgb, var(--cor-principal) 90%, #000);
+  transform: translateY(-2px);
+}
