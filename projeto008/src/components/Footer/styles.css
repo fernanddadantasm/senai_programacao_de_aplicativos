@@ -1,2 +1,46 @@
 /* projeto008\src\components\Footer\styles.css */
+/* projeto008\src\components\Footer\styles.css */
 
+/* Cores do Itaú */
+:root {
+  --itau-azul-escuro: #002d5f;
+  --itau-branco: #ffffff;
+}
+
+.footer {
+  margin-top: auto;
+  background: var(--itau-azul-escuro);
+  color: var(--itau-branco);
+}
+
+.footer__wrap {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 20px 0 28px;
+  display: grid;
+  gap: 16px;
+  font-size: 14px;
+  text-align: left; /* Alinha todo o conteúdo à direita */
+}
+
+.footer__section h3 {
+  margin: 0;
+  color: var(--itau-branco);
+}
+
+.footer__section p {
+  margin: 4px 0;
+  opacity: .8;
+}
+
+.divider {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-color: var(--itau-branco);
+  opacity: .5;
+}
+
+.copy {
+  opacity: .8;
+}

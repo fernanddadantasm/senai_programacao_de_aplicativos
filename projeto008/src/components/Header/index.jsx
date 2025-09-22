@@ -1,6 +1,7 @@
 // projeto008\src\components\Header\index.jsx
+// src/components/Header/index.jsx
 import { Link, NavLink } from "react-router-dom";
-import '/styles.css'
+import './styles.css'; // <-- This is the correct line
 import logo from '../../assets/logo.png'
 
 function Header() {
@@ -9,7 +10,7 @@ function Header() {
             <div className="header__wrap">
                 <Link to="/" className="brand">
                     <img src={logo} alt="Logo do site" />
-                    <span>Itau Home</span>
+                    <span>Home</span>
                 </Link>
                 <nav className="nav">
                     <NavLink to="/servicos" className={({ isActive }) => isActive ? 'link active' : 'link'}>

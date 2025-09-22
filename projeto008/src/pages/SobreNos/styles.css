@@ -1,1 +1,48 @@
 /* projeto008\src\pages\SobreNos\styles.css */
+
+/* Cores do Itaú */
+:root {
+  --itau-laranja: #ec7000;
+  --itau-azul-escuro: #002d5f;
+  --itau-cinza-claro: #f5f5f5;
+}
+
+.sobre {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.sobre h1 {
+  text-align: center;
+  color: var(--itau-azul-escuro);
+}
+
+.sobre h1:first-of-type {
+  font-size: clamp(28px, 4vw, 44px);
+  margin-bottom: 10px;
+}
+
+.sobre p {
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 12px;
+}
+
+.sobre ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.sobre ul li {
+  background-color: var(--itau-cinza-claro);
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid var(--itau-laranja);
+  color: var(--itau-azul-escuro);
+}

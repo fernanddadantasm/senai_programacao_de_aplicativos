@@ -1,10 +1,8 @@
-// projeto008\src\pages\SobreNos\index.jsx
-
 import './styles.css';
 
-function SobreNos() {  
+function SobreNos() {
     return (
-        <Selection className='sobre'>
+        <section className='sobre'>
             <h1>Sobre Nós</h1>
             <h1> Muito prazer, nós somos o Itaú Unibanco!</h1>
             <p>Com mais de 90 anos de história, somos um dos maiores bancos do Brasil e da América Latina. Nossa missão é transformar a vida das pessoas por meio de soluções financeiras inovadoras e acessíveis.</p>
@@ -16,7 +14,8 @@ function SobreNos() {
                 <li>Visão: Ser o banco mais respeitado e admirado do Brasil, reconhecido pela excelência em atendimento e inovação.</li>
                 <li>Valores: Ética, Transparência, Sustentabilidade, Inovação, Foco no Cliente e Desenvolvimento Humano.</li>
             </ul>
-        </Selection>
-    ) 
+        </section>
+    );
 }
+
 export default SobreNos;

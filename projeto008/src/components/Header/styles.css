@@ -1,1 +1,58 @@
 /* projeto008\src\components\Header\styles.css */
+
+
+/* Cores do Itaú */
+:root {
+  --itau-laranja: #ec7000;
+  --itau-azul-escuro: #002d5f;
+  --itau-cinza-neutro: #d3d3d3;
+  --itau-cinza-claro: #f5f5f5;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: white;
+  border-bottom: 1px solid var(--itau-cinza-neutro);
+}
+.header__wrap {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--itau-azul-escuro);
+  text-decoration: none;
+  font-weight: 700;
+}
+.brand img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.nav {
+  display: flex;
+  gap: 14px;
+}
+.link {
+  text-decoration: none;
+  color: #374151; /* Mantido cinza escuro para legibilidade */
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: color .2s ease, background-color .2s ease;
+}
+.link:hover {
+  color: var(--itau-azul-escuro);
+  background: #f3f4f6;
+}
+.link.active {
+  color: var(--itau-laranja);
+  background: var(--itau-cinza-claro);
+}

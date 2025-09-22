@@ -1,1 +1,121 @@
 /* projeto008\src\pages\Home\styles.css */
+
+/* Cores do Itaú */
+:root {
+  --itau-laranja: #ec7000;
+  --itau-azul-escuro: #002d5f;
+  --itau-cinza-claro: #f5f5f5;
+  --itau-cinza-neutro: #d3d3d3;
+}
+
+.home {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero__text h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  margin: 0 0 10px;
+  color: var(--itau-azul-escuro);
+}
+
+.hero__text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.hero__cta {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero__image img {
+  width: 100%;
+  max-width: 500px; /* Garante que a imagem não seja muito grande */
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+/* FEATURES */
+.features {
+  text-align: center;
+  margin-top: 48px;
+  padding: 24px;
+}
+
+.features h2 {
+  margin: 0 0 24px;
+  color: var(--itau-azul-escuro);
+}
+
+.grid.cols-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 5px solid transparent;
+  transition: border-color 0.3s ease;
+  text-align: left;
+}
+
+.card:hover {
+  border-color: var(--itau-laranja);
+}
+
+.card h3 {
+  color: var(--itau-azul-escuro);
+  margin: 0 0 8px;
+}
+
+.card p {
+  color: #6b7280;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* SOCIAL PROOF */
+.socialProof {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.socialProof__image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.socialProof__text h2 {
+  margin: 0 0 8px;
+  color: var(--itau-azul-escuro);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .hero, .socialProof {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,1 +1,15 @@
 /* projeto008\src\pages\Servicos\styles.css */
+/* Cores do Itaú */
+:root {
+  --itau-azul-escuro: #002d5f;
+}
+
+.servicos {
+  display: grid;
+  gap: 16px;
+}
+
+.servicos h1 {
+  margin: 0;
+  color: var(--itau-azul-escuro);
+}
